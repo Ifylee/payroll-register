@@ -13,6 +13,10 @@ while (letsContinue) {
   const lastName = prompt("Enter employee's last name");
   let salary = prompt("Enter employee's salary");
 
+  if (salary === null || salary === "" || isNaN(salary)) {
+    salary = 0;
+  }
+
 }
 
 }
