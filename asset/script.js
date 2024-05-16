@@ -17,8 +17,19 @@ while (letsContinue) {
     salary = 0;
   }
 
+  const employee = {
+    firstName: firstName,
+    lastName: lastName,
+    salary: parseInt(salary)
+  }
+
+  employees.push(employee);
+
+  letsContinue = confirm("Do you want to add another employee?");
+
 }
 
+  return employees;
 }
 
 // Display the average salary
