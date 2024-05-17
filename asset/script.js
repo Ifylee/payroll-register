@@ -1,13 +1,14 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-// Collect employee data
+//Employee data
+//Wrote afunction to get user input to create and return an array of employee objects
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects
+
 const employees = [];
 
 let letsContinue = true;
-
+// Checks to see that all the boxes are filled with input. 
 while (letsContinue) {
   let firstName = prompt("Enter employee's first name");
   let lastName = prompt("Enter employee's last name");
@@ -20,35 +21,37 @@ while (letsContinue) {
   const employee = {
     firstName: firstName,
     lastName: lastName,
+    // This returns salary as a number and not a string.
     salary: parseInt(salary)
   }
-
+  // This stores the nem employee data in the employees variable that is set to an empty array 
   employees.push(employee);
 
   letsContinue = confirm("Do you want to add another employee?");
 
 }
-
+  // returns the information stored in the employees variable
   return employees;
 }
 
-// Display the average salary
+ //Wrote a function which Calculates and display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  
   let totalSalary = 0;
   let numEmployees = employeesArray.length;
 
   for (let i = 0; i < numEmployees; i++) {
   totalSalary += employeesArray[i].salary;
   }
-
+  // The two $$ signs: one is for template literal and the other is just a dollar sign on the average salary amount.
   const averageSalary = totalSalary/numEmployees;
   console.log( `The average employee salary between our ${numEmployees} employee(s) is $${averageSalary.toFixed(2)}`);
 }
 
-// Select a random employee
+
+// Wrote a function which Selects and displays a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  // The Math.floor(math.radom()) method is used to select a random number and round it to a whole number
   const randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)]
 
   console.log(`Congratulations! ${randomEmployee["firstName"]} ${randomEmployee["lastName"]} is our daily winner!`);
