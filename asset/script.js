@@ -51,6 +51,10 @@ const getRandomEmployee = function(employeesArray) {
   console.log( `The average employee salary between our ${numEmployees} employee(s) is $${averageSalary.toFixed(2)}`);
 }
 
+  // const randomEmployee = employeesArray[Math.floor(math.random() * employeesArray.length)];
+
+//  console.log(`Random employee ${randomEmployee["firstName"]} ${randomEmployee["lastName"]} is our daily winner!`);
+
 /*
   ====================
   STARTER CODE
