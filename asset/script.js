@@ -35,11 +35,6 @@ while (letsContinue) {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-}
-
-// Select a random employee
-const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
   let totalSalary = 0;
   let numEmployees = employeesArray.length;
 
@@ -51,9 +46,14 @@ const getRandomEmployee = function(employeesArray) {
   console.log( `The average employee salary between our ${numEmployees} employee(s) is $${averageSalary.toFixed(2)}`);
 }
 
+// Select a random employee
+const getRandomEmployee = function(employeesArray) {
+  // TODO: Select and display a random employee
   // const randomEmployee = employeesArray[Math.floor(math.random() * employeesArray.length)];
 
-//  console.log(`Random employee ${randomEmployee["firstName"]} ${randomEmployee["lastName"]} is our daily winner!`);
+
+//  console.log(`Congratulations! ${randomEmployee["firstName"]} ${randomEmployee["lastName"]} is our daily winner!`);
+};
 
 /*
   ====================
