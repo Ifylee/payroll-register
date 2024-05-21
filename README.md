@@ -6,4 +6,6 @@ Click on the add employee button to add new employee(s) information. A prompt dr
 
 Click on the page link to take you there: https://ifylee.github.io/payroll-register/
 
-<a href="./asset/image.png"></a>
+![App view before input](image.png)
+![App view after input](image-1.png)
+
